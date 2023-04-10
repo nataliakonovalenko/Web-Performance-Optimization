@@ -5,121 +5,144 @@
     <title>Hometask</title>
     <style>
         img {
+            display: block;
             width: 100%;
             object-fit: cover;
         }
     </style>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script>
+    <script async src="https://cdn.jsdelivr.net/npm/loading-attribute-polyfill@0.2.0/loading-attribute-polyfill.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image1-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image1-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image1-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image1-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image1-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image1-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image1-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image1-1920.jpeg">
-        <img src="images/image1-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image2-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image2-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image2-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image2-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image2-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image2-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image2-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image2-1920.jpeg">
-        <img src="images/image2-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image3-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image3-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image3-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image3-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image3-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image3-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image3-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image3-1920.jpeg">
-        <img src="images/image3-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image4-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image4-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image4-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image4-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image4-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image4-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image4-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image4-1920.jpeg">
-        <img src="images/image4-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image5-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image5-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image5-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image5-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image5-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image5-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image5-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image5-1920.jpeg">
-        <img src="images/image5-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image6-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image6-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image6-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image6-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image6-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image6-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image6-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image6-1920.jpeg">
-        <img src="images/image6-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image7-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image7-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image7-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image7-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image7-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image7-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image7-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image7-1920.jpeg">
-        <img src="images/image7-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image8-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image8-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image8-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image8-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image8-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image8-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image8-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image8-1920.jpeg">
-        <img src="images/image8-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image9-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image9-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image9-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image9-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image9-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image9-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image9-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image9-1920.jpeg">
-        <img src="images/image9-1920.jpeg" loading="lazy" alt=''>
-    </picture>
-    <picture>
-        <source type="image/webp" media="(max-width: 767px)" srcset="images/image10-320.webp">
-        <source type="image/webp" media="(max-width: 1023px)" srcset="images/image10-768.webp">
-        <source type="image/webp" media="(max-width: 1919px)" srcset="images/image10-1024.webp">
-        <source type="image/webp" media="(min-width: 1920px)" srcset="images/image10-1920.webp">
-        <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image10-320.jpeg">
-        <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image10-768.jpeg">
-        <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image10-1024.jpeg">
-        <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image10-1920.jpeg">
-        <img src="images/image10-1920.jpeg" loading="lazy" alt=''>
-    </picture>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image1-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image1-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image1-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image1-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image1-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image1-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image1-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image1-1920.jpeg">
+            <img src="images/image1-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image2-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image2-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image2-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image2-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image2-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image2-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image2-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image2-1920.jpeg">
+            <img src="images/image2-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image3-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image3-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image3-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image3-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image3-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image3-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image3-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image3-1920.jpeg">
+            <img src="images/image3-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image4-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image4-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image4-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image4-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image4-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image4-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image4-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image4-1920.jpeg">
+            <img src="images/image4-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image5-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image5-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image5-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image5-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image5-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image5-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image5-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image5-1920.jpeg">
+            <img src="images/image5-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image6-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image6-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image6-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image6-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image6-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image6-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image6-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image6-1920.jpeg">
+            <img src="images/image6-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image7-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image7-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image7-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image7-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image7-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image7-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image7-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image7-1920.jpeg">
+            <img src="images/image7-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image8-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image8-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image8-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image8-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image8-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image8-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image8-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image8-1920.jpeg">
+            <img src="images/image8-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image9-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image9-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image9-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image9-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image9-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image9-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image9-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image9-1920.jpeg">
+            <img src="images/image9-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
+    <noscript class="loading-lazy">
+        <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="images/image10-320.webp">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="images/image10-768.webp">
+            <source type="image/webp" media="(max-width: 1919px)" srcset="images/image10-1024.webp">
+            <source type="image/webp" media="(min-width: 1920px)" srcset="images/image10-1920.webp">
+            <source type="image/jpeg" media="(max-width: 767px)" srcset="images/image10-320.jpeg">
+            <source type="image/jpeg" media="(max-width: 1023px)" srcset="images/image10-768.jpeg">
+            <source type="image/jpeg" media="(max-width: 1919px)" srcset="images/image10-1024.jpeg">
+            <source type="image/jpeg" media="(min-width: 1920px)" srcset="images/image10-1920.jpeg">
+            <img src="images/image10-1920.jpeg" loading="lazy" alt=''>
+        </picture>
+    </noscript>
 </body>
 </html>
