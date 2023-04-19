@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
+const HtmlCriticalWebpackPlugin = require('html-critical-webpack-plugin')
 
 module.exports = {
     mode: 'production',
@@ -37,6 +38,27 @@ module.exports = {
         }),
         new miniCss({
             filename: 'style.css',
+        }),
+        new HtmlCriticalWebpackPlugin({
+            base: path.resolve(__dirname, 'dist'),
+            src: 'index.html',
+            dest: 'index.html',
+            inline: true,
+            extract: true,
+            dimensions: [
+                {
+                    width: 375,
+                    height: 667,
+                },
+                {
+                    width: 768,
+                    height: 1024,
+                },
+                {
+                    width: 1024,
+                    height: 950,
+                },
+            ],
         }),
     ],
 };
