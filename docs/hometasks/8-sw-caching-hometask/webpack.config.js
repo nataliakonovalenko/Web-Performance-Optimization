@@ -1,12 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const miniCss = require('mini-css-extract-plugin');
+const {InjectManifest} = require('workbox-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     entry: path.resolve(__dirname, 'src/index.js'),
     output: {
-        filename: 'bundle.js',
+        path: path.resolve(__dirname, './build'),
+        publicPath: '',
+        clean: true,
     },
     module: {
         rules: [
@@ -37,6 +41,15 @@ module.exports = {
         }),
         new miniCss({
             filename: 'style.css',
+        }),
+        new InjectManifest({
+            swSrc: './src/service-worker.js',
+            swDest: 'service-worker.js'
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: './src/manifest.json', to: '' },
+            ],
         }),
     ],
 };
