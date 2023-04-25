@@ -1,0 +1,8 @@
+{
+  "theme_color" : "#292f36",
+  "background_color" : "#4a90e2",
+  "display" : "browser",
+  "start_url" : ".",
+  "name" : "PWA Course",
+  "short_name" : "PWA"
+}
